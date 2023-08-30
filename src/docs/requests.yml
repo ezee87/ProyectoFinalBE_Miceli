@@ -1,0 +1,69 @@
+components:
+  parameters:
+    schemas:
+      NewProduct:
+        type: object
+        required: 
+          - name
+          - description
+          - category
+          - price
+          - stock
+        properties:
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Descripción del producto
+          category:
+            type: string
+            description: Categoria del producto
+          price:
+            type: number
+            description: Precio del producto
+          stock:
+            type: number
+            description: Stock del producto
+        example:
+          name: Producto Pepito
+          description: Un producto para aquellos amantes de la aventuras de Pepito
+          category: Juegos
+          price: 1688
+          stock: 5
+      NewProductDTO:
+        type: object
+        required: 
+          - name
+          - description
+          - price
+          - stock
+        properties:
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Descripción del producto
+          price:
+            type: number
+            description: Precio del producto
+          stock:
+            type: number
+            description: Stock del producto
+        example:
+          name: Producto Pepito
+          description: Un producto para aquellos amantes de la aventuras de Pepito
+          price: 1688
+          stock: 5
+      NewCart:
+        type: object
+        required: 
+          - products
+        properties:
+          products:
+            type: array
+            description: Productos que contiene el carrito
+        example:
+          products: []
+  

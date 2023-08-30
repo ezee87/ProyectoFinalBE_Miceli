@@ -13,16 +13,23 @@ import MessagesManager from "./persistence/daos/filesystem/messages.dao.js";
 import passport from 'passport';
 import routerApi from './routes/index.js';
 import config from './config.js';
-import { logger } from './utils/logger.js'
+import { logger } from './utils/logger.js';
+import swaggerUI from 'swagger-ui-express';
+import swaggerJSDoc from 'swagger-jsdoc';
+import { info } from './docs/info.js';
 import "./persistence/daos/mongodb/connection.js";
 import './passport/local.js';
 import './passport/github.js';
 import './passport/jwt.js';
 
+
 const productManager = new ProductManager(__dirname + "/daos/filesystem/products.json");
 const messagesManager = new MessagesManager(__dirname + "/daos/filesystem/messages.json");
 
 const app = express();
+
+const specs = swaggerJSDoc(info);
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(specs));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

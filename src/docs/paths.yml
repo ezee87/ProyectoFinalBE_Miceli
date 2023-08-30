@@ -1,0 +1,308 @@
+paths:
+  /api/products:
+    post:
+      tags: 
+      - Productos
+      summary: Agregar producto nuevo en base de datos
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/NewProduct'
+        required: true
+      responses:
+        200:
+          description: Se agrego el producto correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/Product'
+        404:
+          description: Error de validacion de schema
+          $ref: '#/components/schema/api/products/ValidationSchemaError'
+        500:
+          description: Error de servidor
+          $ref: '#/components/schema/Products/NotFound'
+    get:
+      tags:
+      - Productos
+      summary: Lista de productos en base de datos
+      responses:
+        200:
+          description: Lista de productos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/GetAllProducts'
+        500:
+          description: Error de servidor
+          $ref: '#/components/schema/Products/NotFound'
+  /api/products/dto:
+    post:
+      tags: 
+      - Productos
+      summary: Agregar producto DTO nuevo en base de datos
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/NewProductDTO'
+        required: true
+      responses:
+        200:
+          description: Se agrego el producto DTO correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/ProductDTO'
+        404:
+          description: Error de validacion de schema
+          $ref: '#/components/schema/api/products/ValidationSchemaError'
+        500:
+          description: Error de servidor
+          $ref: '#/components/schema/Products/NotFound'
+  /api/products/dto/{id}:
+    get:
+      tags:
+      - Productos
+      summary: Buscar producto DTO por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: id referente al producto dto
+          schema:
+            type: string
+      responses:
+        200:
+          description: Producto DTO encontrado
+          content:
+          application/json:
+            schema:
+              $ref: '#/components/schema/Products/ProductDTO'
+        404:
+          description: producto no encontrado
+          content:
+          application/json:
+            schema:
+              $ref: '#/components/schema/Products/ErrorGetById'
+  /api/products/{id}:
+    get:
+      tags:
+      - Productos
+      summary: Buscar producto por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: id referente al producto
+          schema:
+            type: string
+      responses:
+        200:
+          description: Producto encontrado
+          content:
+          application/json:
+            schema:
+              $ref: '#/components/schema/Products/Product'
+        404:
+          description: producto no encontrada
+          content:
+          application/json:
+            schema:
+              $ref: '#/components/schema/Products/ErrorGetById'
+    put:
+      tags:
+      - Productos
+      summary: Editar producto
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: string id required
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/NewProduct'
+        required: true
+      responses:
+          200:
+            description: Producto actualizado
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Products/Prouct'
+          404:
+            description: No se encuentra producto con id {id}
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Products/ErrorGetById'         
+    delete:
+      tags:
+      - Productos
+      summary: Eliminar producto por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: string id required
+          schema:
+            type: string
+      responses:
+        200:
+          description: Producto eliminado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/DeleteById'
+        404:
+          description: No se encuentra producto con id {id}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/ErrorGetById'
+  /api/carts:
+    post:
+      tags: 
+      - Carritos
+      summary: Crear nuevo carrito
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/NewCart'
+        required: true
+      responses:
+        200:
+          description: Se registró la noticia correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Carts/Cart'
+        404:
+          description: Error de validacion de schema
+          $ref: '#/components/schema/Carts/ValidationSchemaError'
+        500:
+          description: Error de servidor
+          $ref: '#/components/schema/Carts/NotFound'
+    get:
+      tags:
+      - Carritos
+      summary: Traer carritos
+      responses:
+        200:
+          description: Lista de carritos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Carts/GetAllCarts'
+        500:
+          description: Error de servidor
+          $ref: '#/components/schema/Carts/NotFound'
+  /api/carts/{id}:
+    get:
+      tags:
+      - Carritos
+      summary: Buscar carrito por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: id referente al carrito
+          schema:
+            type: string
+      responses:
+        200:
+          description: Carrito encontrado
+          content:
+          application/json:
+            schema:
+              $ref: '#/components/schema/Carts/Cart'
+        404:
+          description: Carrito no encontrado
+          content:
+          application/json:
+            schema:
+              $ref: '#/components/schema/Carts/ErrorGetById'
+    put:
+      tags:
+      - Carritos
+      summary: Editar carrito
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: string id required
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/NewCart'
+        required: true
+      responses:
+          200:
+            description: Carrito actualizado
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Carts/Cart'
+          404:
+            description: No se encuentra carrito con id {id}
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Carts/ErrorGetById'         
+    delete:
+      tags:
+      - Carritos
+      summary: Eliminar carrito por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: string id required
+          schema:
+            type: string
+      responses:
+        200:
+          description: carrito eliminada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Carts/DeleteById'
+        404:
+          description: No se encuentra carrito con id {id}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Carts/ErrorGetById'
+  /api/carts/{cartId}/add/{prodId}:
+    post:
+      tags: 
+      - Carritos
+      summary: Agregar producto (prodId) a un carrito (cartId)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/NewCart'
+        required: true
+      responses:
+        200:
+          description: Se agrego correctamente el producto al carrito deseado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Carts/Cart'
+        404:
+          description: Error de validacion de schema
+          $ref: '#/components/schema/Carts/ValidationSchemaError'
+        500:
+          description: Error de servidor
+          $ref: '#/components/schema/Carts/NotFound'

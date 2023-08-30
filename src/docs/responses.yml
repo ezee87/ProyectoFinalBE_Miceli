@@ -1,0 +1,151 @@
+components:
+  schema:
+    Products:
+      Product:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id del producto
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Descripción del producto
+          category:
+            type: string
+            description: Categoria del producto
+          price:
+            type: number
+            description: Precio del producto
+          stock:
+            type: number
+            description: Stock del producto
+        example:
+          name: Producto Pepito
+          description: Un producto para aquellos amantes de la aventuras de Pepito
+          category: Juegos
+          price: 1688
+          stock: 5
+      ProductDTO:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id del producto
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Descripción del producto
+          precio:
+            type: number
+            description: Precio del producto
+        example:
+          name: Producto Pepito
+          description: Un producto para aquellos amantes de la aventuras de Pepito
+          precio: 1688
+      GetAllProducts:
+        type: array
+        items:
+         properties:
+          id:
+            type: string
+            description: Id del producto
+          name:
+            type: string
+            description: Nombre del producto
+          description:
+            type: string
+            description: Descripción del producto
+          category:
+            type: string
+            description: Categoria del producto
+          price:
+            type: number
+            description: Precio del producto
+          stock:
+            type: number
+            description: Stock del producto
+        example:
+          name: Producto Pepito
+          description: Un producto para aquellos amantes de la aventuras de Pepito
+          category: Juegos
+          price: 1688
+          stock: 5
+      ValidationSchemaError:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error de validación de schema
+        example:
+          message: "El schema del producto no es válido"
+      NotFound:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error de servidor
+          example:
+            message: Error de servidor
+      ErrorGetById:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error no se encuentra producto
+          example:
+            message: No se encontró producto con id ----
+    Carts:
+      Cart:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id del carrito
+          products:
+            type: array
+            description: Lista de productos contenidos por el carrito
+        example:
+          id: 1
+          products: []
+      GetAllCarts:
+        type: array
+        items:
+          properties:
+          id:
+            type: string
+            description: Id del carrito
+          products:
+            type: array
+            description: Lista de productos contenidos por el carrito
+        example:
+          id: 1
+          products: []
+      ValidationSchemaError:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error de validación de schema
+        example:
+          message: "El schema del carrito no es válido"
+      NotFound:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error de servidor
+          example:
+            message: Error de servidor
+      ErrorGetById:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Mensaje de error no se encuentra carrito
+          example:
+            message: No se encontró carrito con id ----
