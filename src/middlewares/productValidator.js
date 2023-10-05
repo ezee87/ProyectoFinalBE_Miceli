@@ -1,4 +1,4 @@
-export const productValidator = (req, res, next) => {
+/* export const productValidator = (req, res, next) => {
     const product = req.body;
     if (product.price === "" || product.price === undefined || typeof product.price !== 'number'){
       res.status(404).send('El precio debe ser ingresado en números!');
@@ -26,4 +26,4 @@ export const productValidator = (req, res, next) => {
       }
     next();
   }
-  
+   */

@@ -19,18 +19,21 @@ export default class MongoDao {
       const response = await this.model.findById(id);
       return response;
     } catch (error) {
-      logger.error("Error al traer elementos por Id en mongodb")
+      logger(error);
     }
   }
 
   async create(obj) {
     try {
       const response = await this.model.create(obj);
+      logger.log("Objeto creado en la base de datos:", response);
       return response;
     } catch (error) {
-      logger.error("Error al crear elementos en mongodb")
+      logger.error("Error al crear elementos en mongo.dao.js:", error);
+      return null;
     }
   }
+  
 
   async update(id, obj) {
     try {

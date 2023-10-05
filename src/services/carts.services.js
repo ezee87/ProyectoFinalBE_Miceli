@@ -3,6 +3,30 @@ const cartDao = new CartDaoMongoDB();
 import fs from "fs";
 import { __dirname } from "../utils.js";
 import {logger} from "../utils/logger.js"
+import { TicketModel } from "../persistence/daos/mongodb/models/ticket.model.js";
+
+export const purchaseCartService = async (cartId, purchaser, amount) => {
+  try {
+    const code = generateUniqueCode();
+
+    const newTicket = new TicketModel({
+      code,
+      amount,
+      purchaser,
+    });
+
+    const savedTicket = await newTicket.save();
+
+    return savedTicket;
+  } catch (error) {
+    throw error;
+  }
+};
+
+const generateUniqueCode = () => {
+  const uniqueString = "TICKET-" + Date.now().toString();
+  return uniqueString;
+};
 
 export const getCartByIdService = async (id) => {
   try {

@@ -25,13 +25,23 @@ const usersSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    default: 'user'
+    default: 'user',
+    enum: ['user', 'admin', 'premium']
   },
   isGithub: {
     type: Boolean,
     required: true,
     default: false
-  }
+  },
+  prodCreator: {
+    type: Boolean,
+    default: false
+  },
+  documents: [{
+    name: { type: String },
+    reference: { type: String }
+  }],
+  lastConnection: { type: Date }
 })
 
 export const userModel = mongoose.model('Users', usersSchema)

@@ -1,6 +1,8 @@
 import * as service from "../services/carts.services.js";
 import { HttpResponse } from "../utils/http.response.js";
+
 const httpResponse = new HttpResponse();
+
 
 export const getCartByIdCtr = async (req, res, next) => {
   try {
@@ -47,6 +49,7 @@ export const updateCartController = async (req, res, next) => {
     next(error);
   }
 };
+
 export const deleteCartCtr = async (req, res, next) => {
   try {
     const { cartId } = req.params;

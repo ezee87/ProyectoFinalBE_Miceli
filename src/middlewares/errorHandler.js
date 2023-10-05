@@ -1,6 +1,9 @@
-import { HttpResponse } from "../utils/http.response.js";
-const httpResponse = new HttpResponse(); 
+import { logger } from "../utils/logger.js";
+import { createResponse } from "../utils.js";
 
 export const errorHandler = (error, req, res, next) => {
-    return httpResponse.NotFound(res, error.message)
-}
+  logger.error(`error ${error.message}`);
+  const status = error.status;
+  createResponse(res, status, error.message);
+  // res.status(status).send(error.message)
+};

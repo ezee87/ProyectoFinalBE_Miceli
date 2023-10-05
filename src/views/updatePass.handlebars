@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Update Password</title>
+</head>
+<body>
+ 
+  <h1>Update Password</h1>
+ <form action="http://localhost:8080/api/users/updatePass" method="post">
+
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="currentPassword" placeholder="Current Password">
+    <input type="password" name="newPassword" placeholder="New Password">
+    <input type="password" name="confirmNewPassword" placeholder="Confirm new password">
+    <input type="submit" value="Update Password">
+  </form>
+</body>
+</html>

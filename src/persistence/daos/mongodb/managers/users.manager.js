@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
 
-const SECRET_KEY = process.env.SECRET_KEY_JWT;
+const SECRET_KEY = "1234";
 
 export default class UserManagerMongo extends MongoDao {
   constructor() {
@@ -75,4 +75,53 @@ export default class UserManagerMongo extends MongoDao {
       console.log(error);
     }
   }
+
+  async getById(id) {
+    try {
+      const userExist = await this.model.findOne({ id });
+      // console.log(userExist);
+      if (userExist) {
+        return userExist;
+      }
+      return false;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
+async updatePass (uid, password) {
+  try {
+    await this.model.updateOne({ _id: uid }, { password: password })
+    return password
+  } catch (error) {
+    throw new Error(error)
+  }  
+}
+
+async updateRole(uid, newRole) {
+  try {
+    await this.model.updateOne({ _id: uid }, { role: newRole });
+    return newRole;
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
+async deleteInactiveUsers() {
+  try {
+    // Calcular la fecha de hace 30 días
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+console.log(thirtyDaysAgo)
+console.log(lastConnection)
+    // Buscar y eliminar usuarios inactivos
+    const result = await this.model.deleteMany({ lastConnection: { $lt: thirtyDaysAgo } });
+
+    return result.deletedCount;
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
 }

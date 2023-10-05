@@ -9,8 +9,8 @@ import ProductManagerFS from "./filesystem/products.dao.js";
 let userManager;
 let productManager;
 let cartManager;
-let ticketManger;
-let persistence = process.argv[2];
+let ticketManager;
+let persistence = "mongo";
 // let persistence = process.env.PERSISTENCE;
 
 switch (persistence) {
@@ -25,8 +25,8 @@ switch (persistence) {
     userManager = new UserManagerMongo();
     productManager = new ProductManagerMongo();
     cartManager = new CartManagerMongo();
-    ticketManger = new TicketManagerMongo();
+    ticketManager = new TicketManagerMongo();
     break;
 }
 
-export default { userManager, productManager, cartManager, ticketManger };
+export default { userManager, productManager, cartManager, ticketManager };

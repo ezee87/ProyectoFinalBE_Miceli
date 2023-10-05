@@ -26,4 +26,37 @@ export default class UserService extends Services {
       logger.error("Error en el servicio de login user")
     }
   };
+
+  
+updatePassService = async (email) => {
+  try { 
+      const updatePass = await this.manager.updatePass(email);
+      return updatePass
+  } catch (error) {
+      logger.error(error.message)
+      throw new Error(error)
+  }
+}
+
+updateStatusService = async (uid, role) => {
+  try {
+      const user = await this.manager.getById(uid);
+      if(!user) {
+          throw new Error('User not found')
+      }
+
+      if(role === 'premium'){
+          user.prodCreator = true;
+          await user.save()
+      }
+
+      const updatedRole = await this.manager.updateRole(uid, role);
+      return updatedRole
+      
+  } catch (error) {
+      loggerDev.error(error.message);
+      throw error
+  }
+};
+
 }

@@ -15,7 +15,7 @@ export class DaoMDBTicket extends MongoDao {
       });
       return newTicket;
     } catch (err) {
-      logger.error("Error al crear un Ticket en mongodb")
+      logger.error("que esta pasando acá!")
     }
   }
 }

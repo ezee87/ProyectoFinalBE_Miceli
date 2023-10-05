@@ -289,3 +289,487 @@
 {"level":"error","message":"mensaje con nivel error"}
 {"level":"error","message":"mensaje con nivel error"}
 {"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error en el servicio de traer todos los elementos"}
+{"level":"error","message":"Error al decodificar token"}
+{"level":"error","message":"Error al decodificar token"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error en el servicio de traer elementos por Id"}
+{"level":"error","message":"Error en el servicio de traer elementos por Id"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al traer un usuario por Email en mongodb"}
+{"level":"error","message":"Error al ingresar con un usuario en mongodb"}
+{"level":"error","message":"Error al traer un usuario por Email en mongodb"}
+{"level":"error","message":"Error al ingresar con un usuario en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error en el servicio de traer elementos por Id"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error en el servicio de traer elementos por Id"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error en el servicio de traer elementos por Id"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error en el servicio de traer elementos por Id"}
+{"level":"error","message":"Error en el servicio de traer todos los elementos"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"expiredAt":"2023-09-29T17:16:24.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError"}
+{"expiredAt":"2023-09-29T17:16:24.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"expiredAt":"2023-09-29T17:37:19.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"expiredAt":"2023-09-30T16:57:17.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"loggerDev is not defined"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"logger is not defined"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"eze@admin.com\" (type string) at path \"_id\" for model \"Users\""}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al traer un usuario por Email en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al ingresar con un usuario en mongodb"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"error Unexpected token } in JSON at position 267"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al crear elementos en mongo.dao.js"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}},"ownerEmail":{"kind":"required","message":"Path `ownerEmail` is required.","name":"ValidatorError","path":"ownerEmail","properties":{"message":"Path `ownerEmail` is required.","path":"ownerEmail","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: ownerEmail: Path `ownerEmail` is required., category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: ownerEmail: Path `ownerEmail` is required., category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}},"ownerEmail":{"kind":"required","message":"Path `ownerEmail` is required.","name":"ValidatorError","path":"ownerEmail","properties":{"message":"Path `ownerEmail` is required.","path":"ownerEmail","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: ownerEmail: Path `ownerEmail` is required., category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: ownerEmail: Path `ownerEmail` is required., category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}

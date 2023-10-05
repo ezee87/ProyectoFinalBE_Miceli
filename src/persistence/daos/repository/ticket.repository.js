@@ -1,17 +1,29 @@
 import factory from "../factory.js";
-const { ticketManger } = factory;
 
 export default class RepoTicket {
   constructor() {
-    this.dao = ticketManger;
+    const { ticketManager } = factory;
+    this.manager = ticketManager;
   }
 
   async createTicket(ticket) {
     try {
-      const newTicket = await ticketManger.create(ticket);
+      console.log("Datos del ticket:", ticket); // Agrega esto
+      const newTicket = await this.manager.create(ticket);
       return newTicket;
     } catch (err) {
       console.log(err);
     }
   }
+
+  async getTicketById(ticketId) {
+    try {
+      const ticket = await this.manager.findById(ticketId);
+      return ticket;
+    } catch (error) {
+      throw error;
+    }
 }
+
+
+  }

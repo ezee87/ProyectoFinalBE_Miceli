@@ -24,30 +24,36 @@ export default class UserDao {
     }
   }
 
-  async loginUser(user){
+  async loginUser(user) {
     try {
-      const { email, password } = user;
-      const userExist = await this.getByEmail(email); 
-      if(userExist){
-        const passValid = isValidPassword(userExist, password)
-        if(!passValid) return false
-        else return userExist
-      } return false
-    } catch (error) {
-      logger.error("Error al ingresar con un usuario en mongodb")
-      throw new Error(error)
-    }
-  }
+        const { email, password } = user;
+        let userExist = await this.getByEmail(email); 
+        if (userExist) {
+            const passValid = isValidPassword(userExist, password);
+            if (!passValid) return false;
+            
+            // Actualiza la fecha de última conexión y guarda el usuario
+            userExist.lastConnection = new Date();
+            userExist = await userExist.save();
 
-  async getById(id){
-    try {
-      const userExist = await userModel.findById(id)
-      if(userExist){
-       return userExist
-      } return false
+            return userExist;
+        }
+        return false;
     } catch (error) {
-      logger.error("Error al traer un usuario por Id en mongodb")
-      // throw new Error(error)
+        logger.error("Error al ingresar con un usuario en MongoDB");
+        throw new Error(error);
+    }
+}
+
+  async getById(id) {
+    try {
+      const userExist = await userModel.findById(id);
+      if (userExist) {
+        return userExist;
+      }
+      return false;
+    } catch (error) {
+      logger.info(error);
     }
   }
 
@@ -62,4 +68,21 @@ export default class UserDao {
       throw new Error(error)
     }
   }
+
+  async deleteInactiveUsers() {
+    try {
+        // Calcular la fecha de hace 30 días
+        const thirtyDaysAgo = new Date();
+        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+        
+        // Buscar y eliminar usuarios inactivos
+        const result = await userModel.deleteMany({ lastConnection: { $lt: thirtyDaysAgo } });
+
+        return result.deletedCount;
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+
 }

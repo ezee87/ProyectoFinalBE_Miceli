@@ -8,15 +8,23 @@ export class ControllerTicket extends ClassController {
     super(repoTicket);
   }
 
-  async createTicket(req, res, next) {
+  async createTicket(ticketData) {
     try {
-      const ticket = {
-        purchaser: "req.session.user.email",
-      };
-      const newTicket = await repoTicket.createTicket(ticket);
+      const { purchaser, amount, code, purchase_datetime } = ticketData;
+      // Crea el nuevo ticket utilizando los datos de la solicitud
+      const newTicket = await repoTicket.createTicket({
+        purchaser,
+        amount,
+        code,
+        purchase_datetime,
+      });
+      // Devuelve el nuevo ticket como respuesta
       return newTicket;
     } catch (err) {
-      next(err);
+      throw err;
     }
   }
+  
+  
+  
 }

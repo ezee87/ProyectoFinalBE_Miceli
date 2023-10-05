@@ -1,14 +1,11 @@
 import { Router } from "express";
 import ProductController from "../controllers/products.controllers.js";
-import * as productsFakerController from "../controllers/productsFaker.controllers.js";
-import { isAdmin } from "../middlewares/isAdmin.js";
+import { isAdmin, isPremium } from "../middlewares/authorization.js";
+import { checkAuth } from '../jwt/auth.js';
+
 const controller = new ProductController();
 
 const router = Router();
-
-router.post("/mockingproducts", productsFakerController.createProductsFaker);
-router.get("/mockingproducts", productsFakerController.getProductsFaker);
-
 
 router.get("/", controller.getAll);
 
@@ -16,21 +13,10 @@ router.get("/:id", controller.getById);
 
 router.get("/dto/:id", controller.getProdById);
 
-/* router.get("/filtrar", controller.filtrarPorCategorias);
+router.post("/", checkAuth, isPremium, controller.createProd);
 
-router.get("/ordenar", controller.ordenarPorPrecios); */
+router.put("/:id", checkAuth, isAdmin, controller.update);
 
-router.post("/", isAdmin, controller.create);
-
-router.post("/dto", controller.createProd);
-
-router.post("/:id/add/:prodId", controller.addProductToCartCtr);
-
-/* router.delete("/:id/del/:prodId", controller.delProductCartController); */
-
-router.put("/:id", isAdmin, controller.update);
-
-router.delete("/:id", isAdmin, controller.delete);
-
+router.delete("/:id", checkAuth, isPremium, controller.delete);
 
 export default router;
