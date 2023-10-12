@@ -779,3 +779,68 @@
 {"level":"error","message":"error Unexpected string in JSON at position 49"}
 {"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
 {"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"Ticket validation failed","errors":{"purchaser":{"kind":"required","message":"Path `purchaser` is required.","name":"ValidatorError","path":"purchaser","properties":{"message":"Path `purchaser` is required.","path":"purchaser","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: Ticket validation failed: purchaser: Path `purchaser` is required.","stack":"ValidationError: Ticket validation failed: purchaser: Path `purchaser` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"Ticket validation failed","errors":{"purchaser":{"kind":"required","message":"Path `purchaser` is required.","name":"ValidatorError","path":"purchaser","properties":{"message":"Path `purchaser` is required.","path":"purchaser","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: Ticket validation failed: purchaser: Path `purchaser` is required.","stack":"ValidationError: Ticket validation failed: purchaser: Path `purchaser` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"Ticket validation failed","errors":{"purchaser":{"kind":"required","message":"Path `purchaser` is required.","name":"ValidatorError","path":"purchaser","properties":{"message":"Path `purchaser` is required.","path":"purchaser","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: Ticket validation failed: purchaser: Path `purchaser` is required.","stack":"ValidationError: Ticket validation failed: purchaser: Path `purchaser` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"Ticket validation failed","errors":{"purchaser":{"kind":"required","message":"Path `purchaser` is required.","name":"ValidatorError","path":"purchaser","properties":{"message":"Path `purchaser` is required.","path":"purchaser","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: Ticket validation failed: purchaser: Path `purchaser` is required.","stack":"ValidationError: Ticket validation failed: purchaser: Path `purchaser` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"User not found"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Error al traer carrito por ID en mongodb"}
+{"level":"error","message":"Error en el servicio de traer un carrito por Id"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"error Unexpected string in JSON at position 363"}
+{"level":"error","message":"Error al traer carrito por ID en mongodb"}
+{"level":"error","message":"Error en el servicio de traer un carrito por Id"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}

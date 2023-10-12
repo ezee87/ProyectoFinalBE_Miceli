@@ -59,3 +59,25 @@ export const deleteCartCtr = async (req, res, next) => {
     next(error);
   }
 };
+
+export const purchaseCartCtr = async (req, res, next) => {
+  try {
+    const { cartId } = req.params;
+    const purchaser = req.user.email;
+
+    console.log('req.user.email:', req.user.email)
+    console.log('purchaser:', purchaser)
+
+    // Lógica para realizar la compra y generar el ticket
+    const result = await service.purchaseCartService(cartId, purchaser);
+
+    // Devuelve la respuesta adecuada según el resultado
+    if (result.success) {
+      res.json(result.ticket);
+    } else {
+      res.status(400).json({ error: "No se pudieron comprar algunos productos", productsNotPurchased: result.productsNotPurchased });
+    }
+  } catch (error) {
+    next(error);
+  }
+};

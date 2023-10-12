@@ -69,6 +69,16 @@ export default class UserDao {
     }
   }
 
+  async updateRole(id, newRole) {
+    try {
+      const updatedUser = await userModel.findByIdAndUpdate(id, { role: newRole }, { new: true });
+      return updatedUser;
+    } catch (error) {
+      throw new Error(error);
+    }
+  }
+
+  
   async deleteInactiveUsers() {
     try {
         // Calcular la fecha de hace 30 días

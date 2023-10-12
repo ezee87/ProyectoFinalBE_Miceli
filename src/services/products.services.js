@@ -23,6 +23,16 @@ export default class ProductService extends Services {
     }
   };
 
+getAllProductsService = async (page, limit) => {
+    try {
+      const item = await prodRepository.getAllProducts(page, limit);
+      if (!item) throw new Error("Cart not found!");
+      else return item;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   createProd = async (obj) => {
     try {
       const newItem = await prodRepository.createProd(obj);

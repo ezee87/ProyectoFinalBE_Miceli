@@ -55,7 +55,7 @@ export default class ProductController extends Controllers {
 
       // Verifica si el usuario premium está tratando de agregar su propio producto al carrito
       const product = await productService.getProdById(prodId);
-      if (product && product.owner.toString() === req.user._id.toString()) {
+      if (product && product.owner === req.user._id) {
         console.log("El usuario está tratando de agregar su propio producto al carrito");
         return createResponse(res, 403, {
           method: "addProductToCart",
@@ -72,3 +72,5 @@ export default class ProductController extends Controllers {
     }
   };
 }
+
+export {ProductController};

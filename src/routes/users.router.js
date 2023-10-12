@@ -12,26 +12,13 @@ router.post("/register", register);
 
 router.post("/login", login);
 
-router.get('/private', checkAuth, (req, res)=>{
-  const { first_name, last_name, email, role } = req.user;
-  res.json({
-    status: 'success',
-    userData: {
-      first_name, 
-      last_name, 
-      email, 
-      role
-    }
-  })
-})
-
 router.post("/loginfront", loginFront);
 
 router.post('/register-local', passport.authenticate('register'), registerResponse);
 
 router.post('/login-local', passport.authenticate('login'), loginResponse);
 
-router.get('/private2', checkAuth, (req, res)=>{
+router.get('/private', checkAuth, (req, res)=>{
   const { first_name, last_name, email, role } = req.user;
   res.json({
     status: 'success',

@@ -44,7 +44,7 @@ updateStatusService = async (uid, role) => {
       if(!user) {
           throw new Error('User not found')
       }
-
+console.log(user)
       if(role === 'premium'){
           user.prodCreator = true;
           await user.save()
@@ -54,7 +54,7 @@ updateStatusService = async (uid, role) => {
       return updatedRole
       
   } catch (error) {
-      loggerDev.error(error.message);
+      logger.error(error.message);
       throw error
   }
 };

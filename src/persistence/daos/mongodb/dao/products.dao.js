@@ -26,7 +26,7 @@ export default class ProductsDaoMongoDB {
       const response = await ProductsModel.paginate({}, { page, limit });
       return response;
     } catch (error) {
-      logger.error("Error al traer todos los productos en mongodb")
+      console.log(error);
     }
   }
 

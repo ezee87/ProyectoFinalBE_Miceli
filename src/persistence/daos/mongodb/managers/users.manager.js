@@ -79,7 +79,7 @@ export default class UserManagerMongo extends MongoDao {
   async getById(id) {
     try {
       const userExist = await this.model.findOne({ id });
-      // console.log(userExist);
+       console.log('usuario:', userExist);
       if (userExist) {
         return userExist;
       }

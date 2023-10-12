@@ -166,20 +166,28 @@ export const updatePassEmailController = async (req, res) => {
 
 export const updateStatusController = async (req, res, next) => {
     try {
+      const { uid } = req.params;
+      const user = await userDao.getById(uid);
   
-        const { uid } = req.params;
-        const user = await userDao.getById(uid)
-        console.log(user, 'rol antes de enviar la solicitud:',user.role)
-        const newRole = user.role === 'user' ? 'premium' : 'user';
-        const updatedRole = await userService.updateStatusService(uid, newRole);
-        console.log('nuevo rol despues la solicitud:', user.role)
-        res.json({ message: 'Role updated successfully', newRole: updatedRole});
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
   
+      console.log('Rol antes de enviar la solicitud:', user.role);
+      const newRole = user.role === 'user' ? 'premium' : 'user';
+  
+      // Actualiza el rol del usuario en la base de datos
+      const updatedUser = await userDao.updateRole(uid, newRole);
+  
+      console.log('Nuevo rol después de la solicitud:', updatedUser.role);
+      
+      res.json({ message: 'Role updated successfully', newRole: updatedUser.role });
     } catch (error) {
-        
-    
+      console.error(error);
+      next(error);
     }
   };
+  
 
   export const deleteInactiveUsersController = async (req, res, next) => {
     try {
