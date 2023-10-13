@@ -1,0 +1,10 @@
+NODE_ENV = 'prod'
+MONGO_PROD = 'mongodb+srv://ezequielM:admin@cluster0.rbgchkc.mongodb.net/ecommerce?retryWrites=true&w=majority' 
+MONGO_LOCAL = 'mongodb://localhost:27017/' 
+MONGO_QA = 'mongodb://localhost:27017/ezequielm-qa' 
+PERSISTENCE = 'mongo'
+PORT=8080
+HOST = 'gmail'
+EMAILETHEREAL = 'siriusdecohome@gmail.com'
+PASSETHEREAL = 'aajq ymkz kfdi sauy'
+PORTETHEREAL = ''
