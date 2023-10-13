@@ -4,6 +4,7 @@ import ProductService, {
 } from "../services/products.services.js";
 import { userModel } from "../persistence/daos/mongodb/models/user.model.js";
 import { createResponse } from "../utils.js";
+import mongoose from 'mongoose';
 
 const productService = new ProductService();
 
@@ -34,7 +35,9 @@ export default class ProductController extends Controllers {
 
   createProd = async (req, res, next) => {
     try {
-      const newItem = await this.service.createProd(req.body);
+      const userId = req.user._id;
+      console.log("userId:", userId); // Agrega esta línea para verificar el userId
+      const newItem = await this.service.createProd(req.body, userId);
       console.log("Datos recibidos en la solicitud:", req.body);
       if (!newItem)
         createResponse(res, 404, {
@@ -45,24 +48,30 @@ export default class ProductController extends Controllers {
     } catch (error) {
       next(error.message);
     }
-  }; 
+  };
+  
   
 
   addProductToCartCtr = async (req, res, next) => {
     try {
-      const { cartId } = req.params;
-      const { prodId } = req.params;
-
+      const { cartId, prodId } = req.params;
+  
+      // Agrega un registro de depuración para verificar el producto obtenido
+      const product = await productService.getProductById(prodId);
+      console.log('Producto obtenido:', product);
+      console.log('Owner:', product.owner)
+      console.log('req.user._id:', req.user._id)
+  
       // Verifica si el usuario premium está tratando de agregar su propio producto al carrito
-      const product = await productService.getProdById(prodId);
-      if (product && product.owner === req.user._id) {
+      if (product && (product.owner instanceof mongoose.Types.ObjectId) && (req.user._id instanceof mongoose.Types.ObjectId) && product.owner.equals(req.user._id)) {
         console.log("El usuario está tratando de agregar su propio producto al carrito");
         return createResponse(res, 403, {
           method: "addProductToCart",
           error: "No puedes agregar tu propio producto al carrito.",
         });
       }
-
+  
+      // Solo pasa el ID del producto a la función addProductToCartService
       const newProduct = await addProductToCartService(cartId, prodId);
       console.log("Producto agregado al carrito:", newProduct);
       res.json(newProduct);

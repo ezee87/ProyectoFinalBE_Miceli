@@ -18,4 +18,18 @@ export default class CartRepository {
       console.log(error);
     }
   }
+
+  async getCartById(id) {
+    try {
+      const cart = await this.dao.getById(id);
+      if (!cart) {
+        throw new Error("Cart not found");
+      }
+      return cart; // Devuelve el objeto completo del producto
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
+
 }

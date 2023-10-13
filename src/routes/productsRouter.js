@@ -13,7 +13,7 @@ router.get("/:id", controller.getById);
 
 router.get("/dto/:id", controller.getProdById);
 
-router.post("/", checkAuth, isPremium, controller.create);
+router.post("/", checkAuth, isPremium, controller.createProd);
 
 router.put("/:id", checkAuth, isAdmin, controller.update);
 

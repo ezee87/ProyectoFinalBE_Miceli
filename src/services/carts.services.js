@@ -5,6 +5,7 @@ import { __dirname } from "../utils.js";
 import {logger} from "../utils/logger.js"
 import { ControllerTicket } from "../controllers/ticket.controllers.js"; 
 import {ProductController} from "../controllers/products.controllers.js";
+import { CartModel } from '../persistence/daos/mongodb/models/carts.model.js';
 import { v4 as uuidv4 } from 'uuid';
 
 const productController = new ProductController();
@@ -63,67 +64,68 @@ export const deleteCartService = async (id) => {
   }
 };
 
-export const purchaseCartService = async (cartId, purchaser) => {
+export const purchaseCartService = async (cid, uid) => {
   try {
-    // Obtén el carrito por su ID
-    const cart = await cartDao.getCartById(cartId);
+    const cart = await CartModel.findById(cid).populate('products.product');
+    console.log('cart:', cart);
 
-    // Inicializa una variable para almacenar los IDs de productos no comprados
-    const productsNotPurchased = [];
+    if (!cart) {
+      throw new Error('Cart not found');
+    }
 
-    // Inicializa una variable para calcular el total de la compra
-    let total = 0;
+    const productsNotAvailable = [];
 
-    // Recorre los productos en el carrito
-    for (const productId of cart.products) {
-      // Obtén el producto por su ID
-      const product = await productController.getProdById(productId);
+    for (const item of cart.products) {
+      const product = item.product;
+      console.log('Product:', product);
+      console.log('item.product:', item.product);
+      console.log('Cart.products:', cart.products);
 
-      // Verifica si hay suficiente stock para la cantidad deseada
-      if (product.stock >= 1) {
-        // Resta la cantidad del producto del stock
-        product.stock -= 1;
+      const quantityRequested = item.quantity;
+      console.log('Quantity Requested:', quantityRequested);
+      console.log('product.stock:', product.stock);
+
+      if (product.stock >= quantityRequested) {
+        console.log('Sufficient Stock:', product.stock);
+        product.stock -= quantityRequested;
         await product.save();
-
-        // Agrega el precio del producto al total
-        total += product.price;
       } else {
-        // Agrega el ID del producto al array de productos no comprados
-        productsNotPurchased.push(productId);
+        productsNotAvailable.push(product._id);
+        console.log('Insufficient Stock:', product.stock);
       }
     }
 
-    // Si hay productos que no se pudieron comprar, actualiza el carrito
-    if (productsNotPurchased.length > 0) {
-      cart.products = productsNotPurchased;
-      await cart.save();
-    } else {
-      // Si todos los productos se compraron con éxito, vacía el carrito
-      cart.products = [];
-      await cart.save();
-    }
-
-    // Genera un código de ticket único
     const ticketCode = uuidv4();
 
-    // Crea un nuevo ticket con los datos de la compra
-    const ticketData = {
-      code: ticketCode,
-      purchase_datetime: new Date(),
-      amount: total,
-      purchaser: purchaser,
-    };
+    console.log('Products Not Available:', productsNotAvailable);
 
-    // Crea el nuevo ticket utilizando tu controlador de tickets
-    const newTicket = await ticketController.createTicket(ticketData);
+    if (productsNotAvailable.length === 0) {
+      cart.purchased = true;
+      await cart.save();
 
-    // Devuelve el resultado de la compra
-    return {
-      success: productsNotPurchased.length === 0,
-      ticket: newTicket,
-      productsNotPurchased: productsNotPurchased,
-    };
+      // Calcular el 'amount' total del carrito
+      let totalAmount = 0;
+
+      for (const item of cart.products) {
+        const product = item.product;
+        const quantityRequested = item.quantity;
+        totalAmount += product.price * quantityRequested;
+      }
+
+      const ticketData = {
+        code: ticketCode,
+        purchase_datetime: new Date(),
+        amount: totalAmount,
+        purchaser: uid,
+      };
+
+      return ticketController.createTicket(ticketData);
+    } else {
+      console.log('Products Not Available:', productsNotAvailable);
+      return { productsNotAvailable };
+    }
   } catch (error) {
-    throw error;
+    console.error(error.message);
+    throw new Error(error);
   }
 };

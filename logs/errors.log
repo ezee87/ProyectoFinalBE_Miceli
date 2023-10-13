@@ -844,3 +844,181 @@
 {"level":"error","message":"Error en el servicio de traer un carrito por Id"}
 {"level":"error","message":"mensaje con nivel error"}
 {"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"cartDao.getCartByID is not a function"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"cartDao.getCartById(...).populate is not a function"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"cartDao.getCartById(...).populate is not a function"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"cartDao.getCartById(...).populate is not a function"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"ProductResponseDTO {\n  nombre: undefined,\n  descripcion: 'The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality',\n  precio: 1718\n}\" (type ProductResponseDTO) at path \"_id\" for model \"products\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"ProductResponseDTO {\n  nombre: undefined,\n  descripcion: 'The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality',\n  precio: 1718\n}\"","value":{"descripcion":"The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality","precio":1718},"valueType":"ProductResponseDTO"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"ProductResponseDTO {\n  nombre: undefined,\n  descripcion: 'The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality',\n  precio: 1718\n}\" (type ProductResponseDTO) at path \"_id\" for model \"products\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"ProductResponseDTO {\n  nombre: undefined,\n  descripcion: 'The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality',\n  precio: 1718\n}\"","value":{"descripcion":"The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality","precio":1718},"valueType":"ProductResponseDTO"}
+{"level":"error"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"ProductResponseDTO {\n  nombre: 'Producto editado',\n  descripcion: 'Probando update',\n  precio: 1718\n}\" (type ProductResponseDTO) at path \"_id\" for model \"products\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"ProductResponseDTO {\n  nombre: 'Producto editado',\n  descripcion: 'Probando update',\n  precio: 1718\n}\"","value":{"descripcion":"Probando update","nombre":"Producto editado","precio":1718},"valueType":"ProductResponseDTO"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Schema hasn't been registered for model \"Product\".\nUse mongoose.model(name, schema)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'stock')"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"Cast to ObjectId failed for value \"65286300061608c750ef\" (type string) at path \"_id\" for model \"carts\""}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"Ticket validation failed","errors":{"amount":{"kind":"required","message":"Path `amount` is required.","name":"ValidatorError","path":"amount","properties":{"message":"Path `amount` is required.","path":"amount","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: Ticket validation failed: amount: Path `amount` is required.","stack":"ValidationError: Ticket validation failed: amount: Path `amount` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: category: Path `category` is required., name: Path `name` is required.","stack":"ValidationError: products validation failed: category: Path `category` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"_message":"products validation failed","errors":{"name":{"kind":"required","message":"Path `name` is required.","name":"ValidatorError","path":"name","properties":{"message":"Path `name` is required.","path":"name","type":"required"}}},"level":"error","message":"Error al crear elementos en mongo.dao.js: products validation failed: name: Path `name` is required.","stack":"ValidationError: products validation failed: name: Path `name` is required.\n    at Document.invalidate (C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:3164:32)\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\document.js:2952:17\n    at C:\\Users\\Eze\\Desktop\\Curso\\Backend\\Proyecto_Final_MiceliE\\node_modules\\mongoose\\lib\\schematype.js:1349:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}
+{"level":"error","message":"mensaje con nivel error"}

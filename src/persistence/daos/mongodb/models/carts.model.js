@@ -1,17 +1,17 @@
 import mongoose from "mongoose";
 
-const CartsSchema = new mongoose.Schema({
+const CartSchema = new mongoose.Schema({
   products: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "products",
-      default: [],
-    },
+      {
+          product: { type: mongoose.Schema.Types.ObjectId, ref: 'products' },
+          quantity: { type: Number, default: 1 },
+      },
   ],
 });
 
- CartsSchema.pre('find', function () {
- this.populate('products');
+CartSchema.pre('find', function() {
+  this.populate('products.product');
 });
 
-export const CartModel = mongoose.model("carts", CartsSchema);
+
+export const CartModel = mongoose.model( 'carts', CartSchema);

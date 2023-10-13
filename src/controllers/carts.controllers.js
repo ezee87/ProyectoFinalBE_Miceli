@@ -39,10 +39,10 @@ export const createCartCtr = async (req, res, next) => {
 export const updateCartController = async (req, res, next) => {
   try {
     const { cartId } = req.params;
-    const { product } = req.body;
+    const { products } = req.body;
     await service.getCartByIdService(cartId);
     const docUpd = await service.updateCartService(cartId, {
-      product,
+      products,
     });
     res.json(docUpd);
   } catch (error) {
@@ -59,23 +59,22 @@ export const deleteCartCtr = async (req, res, next) => {
     next(error);
   }
 };
-
 export const purchaseCartCtr = async (req, res, next) => {
   try {
     const { cartId } = req.params;
     const purchaser = req.user.email;
 
-    console.log('req.user.email:', req.user.email)
-    console.log('purchaser:', purchaser)
+    console.log('req.user.email:', req.user.email);
+    console.log('purchaser:', purchaser);
 
     // Lógica para realizar la compra y generar el ticket
     const result = await service.purchaseCartService(cartId, purchaser);
 
-    // Devuelve la respuesta adecuada según el resultado
-    if (result.success) {
-      res.json(result.ticket);
+    // Comprobar si se generó un ticket válido
+    if (result.productsNotAvailable && result.productsNotAvailable.length > 0) {
+      res.status(400).json({ error: "No se pudieron comprar algunos productos", productsNotPurchased: result.productsNotAvailable });
     } else {
-      res.status(400).json({ error: "No se pudieron comprar algunos productos", productsNotPurchased: result.productsNotPurchased });
+      res.json(result.ticket);
     }
   } catch (error) {
     next(error);

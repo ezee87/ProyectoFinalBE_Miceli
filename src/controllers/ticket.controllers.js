@@ -23,8 +23,6 @@ export class ControllerTicket extends ClassController {
     } catch (err) {
       throw err;
     }
-  }
-  
-  
+  } 
   
 }

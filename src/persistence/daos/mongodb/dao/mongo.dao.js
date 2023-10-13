@@ -19,7 +19,7 @@ export default class MongoDao {
       const response = await this.model.findById(id);
       return response;
     } catch (error) {
-      logger(error);
+      logger.error(error);
     }
   }
 

@@ -7,7 +7,7 @@ const productsSchema = new mongoose.Schema({
   category: { type: String, required: true }, // Asegúrate de que esto esté presente y requerido
   price: { type: Number, required: true },
   stock: { type: Number, required: true },
-  ownerEmail: { type: String, required: false },
+  owner: { type: mongoose.Schema.Types.ObjectId, required: false }
 });
 
 

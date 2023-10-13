@@ -23,7 +23,7 @@ router.get("/:cartId", getCartByIdCtr);
 router.post("/", createCartCtr);
 router.put("/:cartId", updateCartController);
 router.delete("/:cartId", deleteCartCtr);
-router.post("/:cartId/add/:prodId", checkAuth, isUser, productController.addProductToCartCtr);
+router.post("/:cartId/add/:prodId", checkAuth, checkAuth, productController.addProductToCartCtr);
 router.post("/:cartId/purchase", checkAuth, isUser, purchaseCartCtr);
 
 export default router;
