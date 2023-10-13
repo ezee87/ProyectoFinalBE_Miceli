@@ -42,9 +42,8 @@ updateStatusService = async (uid, role) => {
   try {
       const user = await this.manager.getById(uid);
       if(!user) {
-          throw new Error('User not found')
+          throw new Error('No se pudo encontrar el usuario por su Id')
       }
-console.log(user)
       if(role === 'premium'){
           user.prodCreator = true;
           await user.save()

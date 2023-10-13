@@ -8,7 +8,7 @@ const ticketSchema = new mongoose.Schema({
   },
   purchase_datetime: {
     type: Date,
-    default: Date.now, // Esto establecerá la fecha y hora actual cuando se cree el ticket
+    default: Date.now,
   },
   amount: {
     type: Number,

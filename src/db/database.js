@@ -23,7 +23,6 @@ switch (config.NODE_ENV) {
         break;
 }
 
-// Configura strictQuery aquí antes de conectar a la base de datos
 mongoose.set('strictQuery', false);
 
 try {

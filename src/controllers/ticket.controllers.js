@@ -1,5 +1,6 @@
 import ClassController from "./class.controllers.js";
 import RepoTicket from "../persistence/daos/repository/ticket.repository.js";
+import {logger} from '../utils/logger.js'
 
 const repoTicket = new RepoTicket();
 
@@ -11,17 +12,15 @@ export class ControllerTicket extends ClassController {
   async createTicket(ticketData) {
     try {
       const { purchaser, amount, code, purchase_datetime } = ticketData;
-      // Crea el nuevo ticket utilizando los datos de la solicitud
       const newTicket = await repoTicket.createTicket({
         purchaser,
         amount,
         code,
         purchase_datetime,
       });
-      // Devuelve el nuevo ticket como respuesta
       return newTicket;
-    } catch (err) {
-      throw err;
+    } catch (error) {
+      logger.error("Error al crear ticket en controlador")
     }
   } 
   

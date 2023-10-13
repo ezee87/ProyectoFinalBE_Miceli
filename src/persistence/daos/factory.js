@@ -10,15 +10,13 @@ let userManager;
 let productManager;
 let cartManager;
 let ticketManager;
-let persistence = "mongo";
-// let persistence = process.env.PERSISTENCE;
+let persistence = process.env.PERSISTENCE;
 
 switch (persistence) {
   case "file":
     productManager = new ProductManagerFS(
       "./src/daos/filesystem/products.json"
     );
-    //userManager = new UserManagerFS(...)
     break;
   case "mongo":
     await initMongoDB();

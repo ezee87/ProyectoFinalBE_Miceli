@@ -1,8 +1,5 @@
 import { Router } from 'express';
-// import { getAllProductsCtr } from "../controllers/products.controllers.js";
-import UserDao from '../persistence/daos/mongodb/dao/user.dao.js'
 import { logger } from '../utils/logger.js'
-const userDao = new UserDao()
 
 const router = Router();
 

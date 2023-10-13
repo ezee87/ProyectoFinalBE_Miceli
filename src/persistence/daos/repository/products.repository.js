@@ -12,14 +12,12 @@ export default class ProductRepository {
     try {
       const product = await this.dao.getById(id);
       if (!product) {
-        throw new Error("Product not found");
+        throw new Error("No se pudo encontrar el producto por su Id");
       }
-      console.log("product--->", product);
       const prodDTO = new ProductResponseDTO(product);
       return prodDTO;
     } catch (error) {
-      console.log(error);
-      throw error; // Asegúrate de lanzar el error para que pueda manejarse en el servicio y el controlador
+      throw error;
     }
   }
 
@@ -27,11 +25,10 @@ export default class ProductRepository {
     try {
       const product = await this.dao.getById(id);
       if (!product) {
-        throw new Error("Product not found");
+        throw new Error("No se pudo encontrar el producto por su Id");
       }
-      return product; // Devuelve el objeto completo del producto
+      return product; 
     } catch (error) {
-      console.log(error);
       throw error;
     }
   }
@@ -42,7 +39,6 @@ export default class ProductRepository {
       const response = await this.dao.create(objDTO);
       return response;
     } catch (error) {
-      console.log(error);
     }
   }
 }

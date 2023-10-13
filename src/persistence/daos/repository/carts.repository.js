@@ -23,9 +23,9 @@ export default class CartRepository {
     try {
       const cart = await this.dao.getById(id);
       if (!cart) {
-        throw new Error("Cart not found");
+        throw new Error("No se pudo encontrar el carrito por su Id");
       }
-      return cart; // Devuelve el objeto completo del producto
+      return cart; 
     } catch (error) {
       console.log(error);
       throw error;

@@ -9,9 +9,6 @@ const strategyOptions = {
   secretOrKey: "1234",
 };
 
-/* ------------------------------------ - ----------------------------------- */
-// !Cookies extractor consigna
-
 const cookieExtractor = (req) => {
   const token = req.cookies.token;
   return token;

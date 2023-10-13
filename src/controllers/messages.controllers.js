@@ -5,12 +5,14 @@ import {
     updateService,
     deleteService,
   } from "../services/messages.services.js";
+  import {logger} from "../utils/logger.js"
   
   export const getAllController = async (req, res, next) => {
     try {
       const docs = await getAllService();
       res.json(docs);
     } catch (error) {
+      logger.error("Error al traer messages en controlador")
       next(error);
     }
   };
@@ -21,6 +23,7 @@ import {
       const doc = await getByIdService(id);
       res.json(doc);
     } catch (error) {
+      logger.error("Error al traer messages por Id en controlador")
       next(error);
     }
   };
@@ -36,6 +39,7 @@ import {
       });
       res.json(newDoc);
     } catch (error) {
+      logger.error("Error al crear messages en controlador")
       next(error);
     }
   };
@@ -53,6 +57,7 @@ import {
       });
       res.json(docUpd);
     } catch (error) {
+      logger.error("Error al actualizar messages en controlador")
       next(error);
     }
   };
@@ -61,8 +66,9 @@ import {
     try {
       const { id } = req.params;
       await deleteService(id);
-      res.json({ message: "Message deleted successfully!" });
+      res.json({ message: "El mensaje se elimino correctamente!" });
     } catch (error) {
+      logger.error("Error al eliminar messages en controlador")
       next(error);
     }
   };

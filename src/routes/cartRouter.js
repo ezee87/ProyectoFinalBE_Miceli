@@ -1,5 +1,4 @@
 import { Router } from "express";
-
 import {
   getAllCartsCtr,
   getCartByIdCtr,
@@ -8,12 +7,10 @@ import {
   deleteCartCtr,
   purchaseCartCtr
 } from "../controllers/carts.controllers.js";
-import { ControllerTicket } from "../controllers/ticket.controllers.js";
 import ProductController from "../controllers/products.controllers.js";
 import { isUser } from "../middlewares/authorization.js";
 import { checkAuth } from '../jwt/auth.js';
 
-const ticketController = new ControllerTicket();
 const productController = new ProductController();
 
 const router = Router();

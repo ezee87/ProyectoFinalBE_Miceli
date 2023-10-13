@@ -8,11 +8,9 @@ export default class RepoTicket {
 
   async createTicket(ticket) {
     try {
-      console.log("Datos del ticket:", ticket); // Agrega esto
       const newTicket = await this.manager.create(ticket);
       return newTicket;
     } catch (err) {
-      console.log(err);
     }
   }
 

@@ -35,7 +35,6 @@ const loginStrategy = new LocalStrategy(strategyOptions, login);
 passport.use('register', signupStrategy);
 passport.use('login', loginStrategy);
 
-//registra al user en req.session.passport
 passport.serializeUser((user, done)=>{
     done(null, user._id);
 });

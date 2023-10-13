@@ -1,18 +1,18 @@
 import { userModel } from '../models/user.model.js'
 import { createHash, isValidPassword } from '../../../../utils.js';
-import {logger} from "../../../../utils/logger.js";
+import { logger } from "../../../../utils/logger.js";
 
 export default class UserDao {
   async createUser(user) {
     try {
       const { email, password } = user;
-      const existUser = await userModel.findOne({email});
-      if(!existUser){
-        if(email === 'adminCoder@coder.com' && password === 'adminCoder123'){
-          const newUser = await userModel.create({...user, password: createHash(password), role: 'admin'})
+      const existUser = await userModel.findOne({ email });
+      if (!existUser) {
+        if (email === 'adminCoder@coder.com' && password === 'adminCoder123') {
+          const newUser = await userModel.create({ ...user, password: createHash(password), role: 'admin' })
           return newUser;
         } else {
-          const newUser = await userModel.create({...user, password: createHash(password)})
+          const newUser = await userModel.create({ ...user, password: createHash(password) })
           return newUser;
         }
       } else {
@@ -26,24 +26,21 @@ export default class UserDao {
 
   async loginUser(user) {
     try {
-        const { email, password } = user;
-        let userExist = await this.getByEmail(email); 
-        if (userExist) {
-            const passValid = isValidPassword(userExist, password);
-            if (!passValid) return false;
-            
-            // Actualiza la fecha de última conexión y guarda el usuario
-            userExist.lastConnection = new Date();
-            userExist = await userExist.save();
-
-            return userExist;
-        }
-        return false;
+      const { email, password } = user;
+      let userExist = await this.getByEmail(email);
+      if (userExist) {
+        const passValid = isValidPassword(userExist, password);
+        if (!passValid) return false;
+        userExist.lastConnection = new Date();
+        userExist = await userExist.save();
+        return userExist;
+      }
+      return false;
     } catch (error) {
-        logger.error("Error al ingresar con un usuario en MongoDB");
-        throw new Error(error);
+      logger.error("Error al ingresar con un usuario en MongoDB");
+      throw new Error(error);
     }
-}
+  }
 
   async getById(id) {
     try {
@@ -57,11 +54,11 @@ export default class UserDao {
     }
   }
 
-  async getByEmail(email){
+  async getByEmail(email) {
     try {
-      const userExist = await userModel.findOne({email}); 
-      if(userExist){
-       return userExist
+      const userExist = await userModel.findOne({ email });
+      if (userExist) {
+        return userExist
       } return false
     } catch (error) {
       logger.error("Error al traer un usuario por Email en mongodb")
@@ -78,21 +75,17 @@ export default class UserDao {
     }
   }
 
-  
+
   async deleteInactiveUsers() {
     try {
-        // Calcular la fecha de hace 30 días
-        const thirtyDaysAgo = new Date();
-        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-        
-        // Buscar y eliminar usuarios inactivos
-        const result = await userModel.deleteMany({ lastConnection: { $lt: thirtyDaysAgo } });
-
-        return result.deletedCount;
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+      const result = await userModel.deleteMany({ lastConnection: { $lt: thirtyDaysAgo } })
+      return result.deletedCount;
     } catch (error) {
-        throw new Error(error);
+      throw new Error(error);
     }
-}
+  }
 
 
 }

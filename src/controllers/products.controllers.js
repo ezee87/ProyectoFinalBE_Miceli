@@ -2,7 +2,7 @@ import Controllers from "./class.controllers.js";
 import ProductService, {
   addProductToCartService,
 } from "../services/products.services.js";
-import { userModel } from "../persistence/daos/mongodb/models/user.model.js";
+import { logger } from "../utils/logger.js";
 import { createResponse } from "../utils.js";
 import mongoose from 'mongoose';
 
@@ -18,17 +18,15 @@ export default class ProductController extends Controllers {
       const { id } = req.params;
       const item = await this.service.getProdById(id);
       if (!item) {
-        console.log("Producto no encontrado");
         createResponse(res, 404, {
           method: "getById",
-          error: "Item not found!",
+          error: "No se encuentra el producto por Id",
         });
       } else {
-        console.log("Producto encontrado:", item);
         createResponse(res, 200, item);
       }
     } catch (error) {
-      console.error("Error al buscar el producto por ID:", error);
+      logger.error("Error al traer producto por Id en controlador")
       next(error.message);
     }
   };
@@ -36,50 +34,39 @@ export default class ProductController extends Controllers {
   createProd = async (req, res, next) => {
     try {
       const userId = req.user._id;
-      console.log("userId:", userId); // Agrega esta línea para verificar el userId
       const newItem = await this.service.createProd(req.body, userId);
-      console.log("Datos recibidos en la solicitud:", req.body);
       if (!newItem)
         createResponse(res, 404, {
           method: "create",
-          error: "Validation error!",
+          error: "No se pudo crear el producto. Validación incorrecta.",
         });
       else createResponse(res, 200, newItem);
     } catch (error) {
-      next(error.message);
+      logger.error("Error al crear producto en controlador")
+      next();
     }
   };
-  
-  
 
   addProductToCartCtr = async (req, res, next) => {
     try {
       const { cartId, prodId } = req.params;
-  
-      // Agrega un registro de depuración para verificar el producto obtenido
+
       const product = await productService.getProductById(prodId);
-      console.log('Producto obtenido:', product);
-      console.log('Owner:', product.owner)
-      console.log('req.user._id:', req.user._id)
-  
-      // Verifica si el usuario premium está tratando de agregar su propio producto al carrito
+
       if (product && (product.owner instanceof mongoose.Types.ObjectId) && (req.user._id instanceof mongoose.Types.ObjectId) && product.owner.equals(req.user._id)) {
-        console.log("El usuario está tratando de agregar su propio producto al carrito");
         return createResponse(res, 403, {
           method: "addProductToCart",
           error: "No puedes agregar tu propio producto al carrito.",
         });
       }
-  
-      // Solo pasa el ID del producto a la función addProductToCartService
+
       const newProduct = await addProductToCartService(cartId, prodId);
-      console.log("Producto agregado al carrito:", newProduct);
       res.json(newProduct);
     } catch (error) {
-      console.error("Error al agregar el producto al carrito:", error);
+      logger.error("Error al agregar producto a un carrito en controlador")
       next(error);
     }
   };
 }
 
-export {ProductController};
+export { ProductController };

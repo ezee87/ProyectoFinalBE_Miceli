@@ -14,7 +14,7 @@ export const getAllService = async () => {
 export const getByIdService = async (id) => {
     try {
         const doc = await MessageDao.getMessageById(id);
-        if (!doc) throw new Error("Message not found");
+        if (!doc) throw new Error("No se pudo encontrar el mensaje");
         else return doc;
     } catch (error) {
         logger.error("Error en el servicio de traer messages por Id")
@@ -24,7 +24,7 @@ export const getByIdService = async (id) => {
 export const createService = async (obj) => {
     try {
         const newProd = await MessageDao.createMessage(obj);
-        if (!newProd) throw new Error("Validation Error!");
+        if (!newProd) throw new Error("No se pudo crear el mensaje. Validacion incorrecta.");
         else return newProd;
     } catch (error) {
         logger.error("Error en el servicio de crear messages")
@@ -35,7 +35,7 @@ export const updateService = async (id, obj) => {
     try {
         const doc = await MessageDao.getMessageById(id);
         if (!doc) {
-            throw new Error("Message not found");
+            throw new Error("No se pudo actualizar el mensaje");
         } else {
             const MessageUpd = await MessageDao.updateMessage(id, obj);
             return MessageUpd;

@@ -66,7 +66,6 @@ export default class UserManagerMongo extends MongoDao {
   async getByEmail(email) {
     try {
       const userExist = await this.model.findOne({ email });
-      // console.log(userExist);
       if (userExist) {
         return userExist;
       }
@@ -110,12 +109,10 @@ async updateRole(uid, newRole) {
 
 async deleteInactiveUsers() {
   try {
-    // Calcular la fecha de hace 30 días
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 console.log(thirtyDaysAgo)
 console.log(lastConnection)
-    // Buscar y eliminar usuarios inactivos
     const result = await this.model.deleteMany({ lastConnection: { $lt: thirtyDaysAgo } });
 
     return result.deletedCount;

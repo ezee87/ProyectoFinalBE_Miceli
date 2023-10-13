@@ -1,5 +1,6 @@
 import * as service from "../services/carts.services.js";
 import { HttpResponse } from "../utils/http.response.js";
+import {logger} from "../utils/logger.js"
 
 const httpResponse = new HttpResponse();
 
@@ -12,6 +13,7 @@ export const getCartByIdCtr = async (req, res, next) => {
 
     res.json(item);
   } catch (error) {
+    logger.error("Error al traer carrito por Id en controlador")
     next(error);
   }
 };
@@ -21,6 +23,7 @@ export const getAllCartsCtr = async (req, res, next) => {
     const items = await service.getAllCartsService();
     res.json(items);
   } catch (error) {
+    logger.error("Error al traer carritos en controlador")
     next(error);
   }
 };
@@ -32,6 +35,7 @@ export const createCartCtr = async (req, res, next) => {
     if (!newCart) return httpResponse.NotFound(res, "Validacion erronea");
     else res.json(newCart);
   } catch (error) {
+    logger.error("Error al crear carrito en controlador")
     next(error);
   }
 };
@@ -46,6 +50,7 @@ export const updateCartController = async (req, res, next) => {
     });
     res.json(docUpd);
   } catch (error) {
+    logger.error("Error al actualizar carrito por Id en controlador")
     next(error);
   }
 };
@@ -56,6 +61,7 @@ export const deleteCartCtr = async (req, res, next) => {
     await service.deleteCartService(cartId);
     return httpResponse.Ok(res, "Item eliminado");
   } catch (error) {
+    logger.error("Error al elimiar carrito por Id en controlador")
     next(error);
   }
 };
@@ -63,20 +69,14 @@ export const purchaseCartCtr = async (req, res, next) => {
   try {
     const { cartId } = req.params;
     const purchaser = req.user.email;
-
-    console.log('req.user.email:', req.user.email);
-    console.log('purchaser:', purchaser);
-
-    // Lógica para realizar la compra y generar el ticket
     const result = await service.purchaseCartService(cartId, purchaser);
-
-    // Comprobar si se generó un ticket válido
     if (result.productsNotAvailable && result.productsNotAvailable.length > 0) {
       res.status(400).json({ error: "No se pudieron comprar algunos productos", productsNotPurchased: result.productsNotAvailable });
     } else {
       res.json(result.ticket);
     }
   } catch (error) {
+    logger.error("Error al comprar carrito en controlador")
     next(error);
   }
 };

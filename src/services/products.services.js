@@ -3,7 +3,7 @@ import factory from "../persistence/daos/factory.js";
 const { productManager } = factory;
 import ProductRepository from "../persistence/daos/repository/products.repository.js";
 import CartRepository from "../persistence/daos/repository/carts.repository.js";
-import {CartModel} from "../persistence/daos/mongodb/models/carts.model.js"
+import { CartModel } from "../persistence/daos/mongodb/models/carts.model.js"
 import { logger } from "../utils/logger.js";
 
 const prodRepository = new ProductRepository();
@@ -35,20 +35,18 @@ export default class ProductService extends Services {
   };
 
 
-getAllProductsService = async (page, limit) => {
+  getAllProductsService = async (page, limit) => {
     try {
       const item = await prodRepository.getAllProducts(page, limit);
-      if (!item) throw new Error("Cart not found!");
+      if (!item) throw new Error("No se pudo traer todos los productos");
       else return item;
     } catch (error) {
-      console.log(error);
     }
   };
 
   createProd = async (obj, userId) => {
     try {
       obj.owner = userId;
-      console.log("userId en servicio:", userId); // Agrega esta línea para verificar el userId
       const newItem = await prodRepository.createProd(obj);
       if (!newItem) return false;
       else return newItem;
@@ -56,31 +54,27 @@ getAllProductsService = async (page, limit) => {
       logger.error(error);
     }
   };
-}  
+}
 
 export const addProductToCartService = async (cartId, prodId) => {
   try {
     const product = await prodRepository.getProductById(prodId);
 
     if (!product) {
-      throw new Error('Product not found');
+      throw new Error('No se pudo encontrar el producto por su Id');
     }
 
-    // Obtiene el carrito actual
     const cart = await CartModel.findById(cartId);
 
     if (!cart) {
-      throw new Error('Cart not found');
+      throw new Error('No se pudo encontrar el carrito por su Id');
     }
 
-    // Verifica si el producto ya está en el carrito
     const existingProduct = cart.products.find(item => item.product._id.toString() === prodId);
 
     if (existingProduct) {
-      // Si el producto ya existe, incrementa la cantidad
       existingProduct.quantity += 1;
     } else {
-      // Si el producto no existe en el carrito, agrégalo
       const newProduct = {
         product: product,
         quantity: 1,
@@ -88,14 +82,13 @@ export const addProductToCartService = async (cartId, prodId) => {
       cart.products.push(newProduct);
     }
 
-    // Actualiza el carrito en la base de datos
     const updatedCart = await CartModel.findByIdAndUpdate(
       cartId,
       { products: cart.products },
-      { new: true } // Devuelve la versión actualizada del carrito
+      { new: true }
     );
 
-    return updatedCart; // Devuelve el carrito actualizado
+    return updatedCart;
   } catch (error) {
     logger.error(error);
     throw error;

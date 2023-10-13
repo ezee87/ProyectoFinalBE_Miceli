@@ -8,6 +8,7 @@ import MongoDao from "../persistence/daos/mongodb/dao/mongo.dao.js";
 import { userModel } from "../persistence/daos/mongodb/models/user.model.js";
 import multer from "multer";
 import { __dirname } from "../utils.js";
+import {logger} from '../utils/logger.js'
 
 const httpResponse = new HttpResponse();
 const userService = new UserService();
@@ -24,6 +25,7 @@ export const register = async (req, res, next) => {
         const token = generateToken(newUser);
         return httpResponse.Ok(res, token);
     } catch (error) {
+        logger.error("Error al registrar usuario en controlador")
         next(error);
     }
 };
@@ -44,6 +46,7 @@ export const login = async (req, res, next) => {
             .header('Authorization', access_token)
             .json({ msg: 'Login OK', access_token })
     } catch (error) {
+        logger.error("Error al ingresar usuario en controlador")
         next(error);
     }
 }
@@ -75,6 +78,7 @@ export const loginFront = async (req, res, next) => {
             )
             .json({ msg: 'Login OK', access_token })
     } catch (error) {
+        logger.error("Error en loginFront en users.controllers.js")
         next(error);
     }
 }
@@ -83,10 +87,11 @@ export const registerResponse = (req, res, next) => {
     try {
         res.json({
             msg: 'Register OK',
-            session: req.session    // --> passport.user: id mongo
+            session: req.session   
         })
     } catch (error) {
         next(error);
+        logger.error("Error en registerResponse en users.controllers.js")
     }
 };
 
@@ -106,6 +111,7 @@ export const loginResponse = async (req, res, next) => {
             }
         })
     } catch (error) {
+        logger.error("Error en loginResponse en users.controllers.js")
         next(error);
     }
 }
@@ -125,6 +131,7 @@ export const githubResponse = async (req, res, next) => {
             }
         })
     } catch (error) {
+        logger.error("Error en githubResponse en users.controllers.js")
         next(error);
     }
 }
@@ -133,23 +140,20 @@ export const updatePassController = async (req, res) => {
     const email = req.body.email;
     const { currentPassword, newPassword, confirmNewPassword } = req.body;
     if (newPassword !== confirmNewPassword) {
-        return res.send('New and confirmation password do not match');
+        return res.send('newPassword y confirmNewPassword no coinciden');
     }
     try {
         const user = await userDao.getByEmail(email);
         if (!user) {
-            return res.status(404).send('User not found');
+            return res.status(404).send('El usuario no se encuentra');
         }
         if (!isValidPassword(user, currentPassword)) {
-            console.log(user, currentPassword);
-            console.log('User password:', user.password);
-            console.log('Current password:', currentPassword);
-            return res.send('Incorrect current password')
+            return res.send('Contraseña actual incorrecta')
 
         }
         const newPassHash = createHash(newPassword);
         await userMongoDao.update(user._id, { password: newPassHash });
-        res.send('Password updated successfully');
+        res.send('La contraseña fue actualizada sastifactoriamente');
     } catch (error) {
         throw new Error(error);
     }
@@ -170,20 +174,13 @@ export const updateStatusController = async (req, res, next) => {
       const user = await userDao.getById(uid);
   
       if (!user) {
-        return res.status(404).json({ message: 'User not found' });
+        return res.status(404).json({ message: 'Usuario no encontrado' });
       }
-  
-      console.log('Rol antes de enviar la solicitud:', user.role);
-      const newRole = user.role === 'user' ? 'premium' : 'user';
-  
-      // Actualiza el rol del usuario en la base de datos
-      const updatedUser = await userDao.updateRole(uid, newRole);
-  
-      console.log('Nuevo rol después de la solicitud:', updatedUser.role);
-      
-      res.json({ message: 'Role updated successfully', newRole: updatedUser.role });
+       const newRole = user.role === 'user' ? 'premium' : 'user';
+       const updatedUser = await userDao.updateRole(uid, newRole);      
+      res.json({ message: 'El rol del usuario fue actualizado!', newRole: updatedUser.role });
     } catch (error) {
-      console.error(error);
+        logger.error("Error al actualizar el rol del usuario")
       next(error);
     }
   };
@@ -191,11 +188,7 @@ export const updateStatusController = async (req, res, next) => {
 
   export const deleteInactiveUsersController = async (req, res, next) => {
     try {
-        console.log("Ejecutando deleteInactiveUsersController");
-        
-        const deletedCount = await userDao.deleteInactiveUsers();
-        console.log(`${deletedCount} usuarios inactivos eliminados`);
-        
+        const deletedCount = await userDao.deleteInactiveUsers();        
         res.json({ message: `${deletedCount} usuarios inactivos eliminados` });
     } catch (error) {
         next(error);
